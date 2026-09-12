@@ -1,4 +1,3 @@
-import React from 'react';
 import FuterLogo from '../assets/logo-text.png'
 
 const Footer = () => {

@@ -1,32 +1,39 @@
-# React + TypeScript + Vite
+# Dev Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Dev Stack is a web application wher users can explore diffefent development techonology and build thear own teachoinology stack.
 
-Currently, two official plugins are available:
+## Featurs
+=> Browse different Techonologi
+=> View Techonology Deitels
+=> Add techonology Your Stack
+=> Rmove Your Stack
+=> Responsive Design
+=> Succuss toast Notifaction
+=> Loading stat while facting data
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
 
-## React Compiler
+- React
+- TypeScript
+- Tailwind CSS
+- DaisyUI
+- React Tostyfy
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+        ## Answer to the Qustion ##
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+1. JSX is a sentex that leat us write HTML-link code inside JavaScript. Its use to React UI exious to write and understand.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+2. - Props are data from a preant compont to a chaild component.
+- State is data menage inside a component and can change over time.
+
+3. useState is use to create and menaged changing data in a component. I use it to manage the seleat techonology satck.
+
+4. useEffect runs side effects after rendering. it can be used to fatch data from API and JSON file.
+
+5. A uniqe key helps react identify whice itenms have changed.been added or remove.
+
+6. Condational reandring means showing UI only whine a cerent condational is true.
+
+7. A parent seand data ta a chaild using props. Achild can send data back by colling a funcation passed through props.

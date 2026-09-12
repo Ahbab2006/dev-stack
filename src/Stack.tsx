@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import type { ITechonologi } from './type/techonologiType';
 import TechnologyCard from './components/TechnologyCard';
 import YourStack from './components/YourStack';
