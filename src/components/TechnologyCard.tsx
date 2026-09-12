@@ -14,7 +14,7 @@ const TechnologyCard = ({
 }: TechnologyCardProps) => {
 
     return (
-        <div className="card bg-base-100 border border-gray-200 shadow-sm">
+        <div className="card bg-base-100 border border-gray-200 shadow-md">
 
             <div className="flex items-center justify-between px-6 pt-6">
 

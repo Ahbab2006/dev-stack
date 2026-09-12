@@ -9,7 +9,7 @@ const Nav = () => {
       <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-4">
         <img src={Logo} alt="Logo" className="h-10 w-auto" />
 
-        <ul className="flex items-center gap-7 text-gray-700 font-medium">
+        <ul className="hidden md:flex items-center gap-7 text-gray-700 font-medium">
           <li>
             <a href="#" className="hover:text-[#D81B7E] transition">
               Home

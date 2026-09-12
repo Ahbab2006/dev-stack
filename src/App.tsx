@@ -3,6 +3,7 @@ import './App.css'
 import Nav from './components/Nav'
 import Techonologies from './components/Techonologies'
 import type { ITechonologi } from './type/techonologiType'
+import Footer from './components/Footer'
 
 
 
@@ -26,7 +27,7 @@ function App() {
         <Techonologies techonologiPromise={techonologiPromise} />
 
       </Suspense>
-    
+    <Footer></Footer>
     
       {/* <Hero></Hero> */}
     </>
