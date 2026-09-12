@@ -3,13 +3,13 @@
 ## Dev Stack is a web application wher users can explore diffefent development techonology and build thear own teachoinology stack.
 
 ## Featurs
-=> Browse different Techonologi
-=> View Techonology Deitels
-=> Add techonology Your Stack
-=> Rmove Your Stack
-=> Responsive Design
-=> Succuss toast Notifaction
-=> Loading stat while facting data
+- Browse different Techonologi
+- View Techonology Deitels
+- Add techonology Your Stack
+- Rmove Your Stack
+- Responsive Design
+- Succuss toast Notifaction
+- Loading stat while facting data
 
 ## Technologies Used
 
@@ -21,7 +21,7 @@
 
 
 
-        ## Answer to the Qustion ##
+ ## Answer to the Qustion ##
 
 1. JSX is a sentex that leat us write HTML-link code inside JavaScript. Its use to React UI exious to write and understand.
 
