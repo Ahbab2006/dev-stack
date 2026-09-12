@@ -7,15 +7,15 @@ interface YourStackProps {
 }
 const YourStack = ({ myStack, onRemove, onRemoveAll }: YourStackProps) => {
     return (
-        <div >
-            <div>
-                <div >
+        <div className='card bg-base-100 border border-gray-200 shadow-sm'>
+            <div className='card-body'>
+                <div className='flex items-center justify-between'>
                     <div>
-                        <h2 >
+                        <h2 className='card-title text-lg'>
                             Your Stack
                         </h2>
 
-                        <p >
+                        <p className='text-xs text-gray-400'>
                             {myStack.length === 0
                                 ? 'No technologies selected yet.'
                                 : `${myStack.length} technologies selected`
@@ -27,8 +27,8 @@ const YourStack = ({ myStack, onRemove, onRemoveAll }: YourStackProps) => {
 
                 {myStack.length === 0 ? (
 
-                    <div >
-                        <p >
+                    <div className='border border-dashed border-gray-300 rounded-lg p-6 text-center mt-3'>
+                        <p className='text-sm text-gray-400'>
                             Your stack is empty.
                         </p>
                     </div>
@@ -42,20 +42,20 @@ const YourStack = ({ myStack, onRemove, onRemoveAll }: YourStackProps) => {
 
                                 <div
                                     key={technology.id}
-
+className='flex items-center justify-between border border-gray-200 rounded-lg p-3'
                                 >
-                                    <div >
+                                    <div className='flex items-center gap-3'>
                                         <img
                                             src={technology.icon}
                                             alt={technology.name}
                                             className="w-8 h-8"
                                         />
                                         <div>
-                                            <h3>
+                                            <h3 className='font-medium text-sm'>
                                                 {technology.name}
                                             </h3>
 
-                                            <p >
+                                            <p className='text-xs text-gray-400'>
                                                 {technology.category}
                                             </p>
                                         </div>
