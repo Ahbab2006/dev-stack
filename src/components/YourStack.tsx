@@ -1,24 +1,15 @@
-import React from 'react';
 import type { ITechonologi } from '../type/techonologiType';
 
-
-interface YourStackProps{
-    myStack:ITechonologi[];
-    onRemove:(id:string)=>void;
-    onRemoveAll:()=>void
+interface YourStackProps {
+    myStack: ITechonologi[];
+    onRemove: (id: string) => void;
+    onRemoveAll: () => void
 }
-
-
-
-const YourStack = ({myStack,onRemove,onRemoveAll}:YourStackProps) => {
+const YourStack = ({ myStack, onRemove, onRemoveAll }: YourStackProps) => {
     return (
-         <div >
-
+        <div >
             <div>
-
-            
                 <div >
-
                     <div>
                         <h2 >
                             Your Stack
@@ -34,43 +25,32 @@ const YourStack = ({myStack,onRemove,onRemoveAll}:YourStackProps) => {
 
                 </div>
 
-
-
                 {myStack.length === 0 ? (
 
                     <div >
-
                         <p >
                             Your stack is empty.
                         </p>
-
                     </div>
 
                 ) : (
 
                     <>
-
-                    
                         <div className="space-y-3 mt-4">
 
                             {myStack.map((technology) => (
 
                                 <div
                                     key={technology.id}
-                               
+
                                 >
-
-                                   
                                     <div >
-
                                         <img
                                             src={technology.icon}
                                             alt={technology.name}
                                             className="w-8 h-8"
                                         />
-
                                         <div>
-
                                             <h3>
                                                 {technology.name}
                                             </h3>
@@ -78,44 +58,31 @@ const YourStack = ({myStack,onRemove,onRemoveAll}:YourStackProps) => {
                                             <p >
                                                 {technology.category}
                                             </p>
-
                                         </div>
-
                                     </div>
-
-
-                                   
                                     <button
                                         onClick={() =>
                                             onRemove(technology.id)
                                         }
                                         className="btn btn-xs btn-error btn-outline"
                                     >
-                                        Delete
+                                        Remove
                                     </button>
-
                                 </div>
-
                             ))}
 
                         </div>
 
-
-                      
                         <button
                             onClick={onRemoveAll}
                             className="btn btn-error w-full mt-5"
                         >
-                            Delete All
+                            Remove All
                         </button>
-
                     </>
-
                 )}
-
             </div>
         </div>
-
     );
 };
 

@@ -14,8 +14,6 @@ const TechnologyCard = ({
 
     return (
         <div >
-
-            {/* Icon + Badge */}
             <div>
 
                 <div >
@@ -25,32 +23,19 @@ const TechnologyCard = ({
                         className="w-10 h-10"
                     />
                 </div>
-
                 <span>
                     {technology.badge}
                 </span>
 
             </div>
-
-
             <div >
-
-                {/* Name */}
                 <h2>
                     {technology.name}
                 </h2>
-
-
-                {/* Description */}
                 <p className="text-gray-500 text-sm leading-6">
                     {technology.description}
                 </p>
-
-
                 <div className="divider my-2"></div>
-
-
-                {/* Category + Difficulty + Rating */}
                 <div>
 
                     <span className="badge badge-ghost">
@@ -69,9 +54,6 @@ const TechnologyCard = ({
                     </span>
 
                 </div>
-
-
-                {/* Add Button */}
                 <div className="card-actions mt-4">
 
                     <button

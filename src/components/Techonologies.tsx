@@ -7,8 +7,6 @@ import Stack from '../Stack';
 interface techonologiProps {
     techonologiPromise: Promise<ITechonologi[]>
 }
-
-
 const Techonologies = ({ techonologiPromise }: techonologiProps) => {
 
     const techonologies = use(techonologiPromise);
@@ -20,8 +18,6 @@ const Techonologies = ({ techonologiPromise }: techonologiProps) => {
             <h2 className='text-3xl font-bold '>Explore the Technologies</h2>
             <p>Pick one technology per category to build your ideal stack.</p>
         </div>
-
-
             <Stack techonologies={techonologies} />
         </div>
     );
