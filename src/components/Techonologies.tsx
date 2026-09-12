@@ -1,6 +1,6 @@
 import React, { use } from 'react';
-import type { ITechonologi } from '../../type/techonologiType';
-import Stack from '../../Stack';
+import type { ITechonologi } from '../type/techonologiType';
+import Stack from '../Stack';
 
 
 

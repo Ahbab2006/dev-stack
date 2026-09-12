@@ -1,9 +1,10 @@
 import { Suspense } from 'react'
 import './App.css'
-import Hero from './components/Hero'
 import Nav from './components/Nav'
-import Techonologies from './components/techonologies/Techonologies'
+import Techonologies from './components/Techonologies'
 import type { ITechonologi } from './type/techonologiType'
+
+
 
 
 const techonologiFetch = async ():Promise<ITechonologi[]> => {
@@ -25,6 +26,8 @@ function App() {
         <Techonologies techonologiPromise={techonologiPromise} />
 
       </Suspense>
+    
+    
       {/* <Hero></Hero> */}
     </>
   )

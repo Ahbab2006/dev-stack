@@ -7,7 +7,7 @@ import HeroImg from '../assets/banner-stack.png'
 
 const Nav = () => {
     return (
-<nav className="bg-white border-b border-gray-200">
+<nav className="bg-white border-b border-gray-200 ">
   {/* Navbar */}
   <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-4">
 
