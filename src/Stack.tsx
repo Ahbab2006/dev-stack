@@ -45,17 +45,13 @@ const Stack = ({ techonologies }: StackProps) => {
                 </div>
             </div>
             <div className="lg:col-span-1">
-
                 <YourStack
                     myStack={myStack}
                     onRemove={handleRemoveFromStack}
                     onRemoveAll={handleRemoveAll}
                 />
-
             </div>
-
         </div>
-
     );
 };
 
