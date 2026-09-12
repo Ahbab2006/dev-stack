@@ -15,8 +15,8 @@ const Techonologies = ({ techonologiPromise }: techonologiProps) => {
         <div className='max-w-6xl mx-auto  gap-12 py-20 px-4'>
 
             <div className='py-2'>
-                <h2 className="text-3xl font-bold py-3 bg-gradient-to-r from-orange-500 via-pink-600 to-violet-600 bg-clip-text text-transparent">
-                    Explore the Technologies
+                <h2 className="text-3xl font-bold py-3 ">
+                    Explore the <span className='bg-gradient-to-r from-orange-500 via-pink-600 to-violet-600 bg-clip-text text-transparent'>Technologies</span>
                 </h2>
 
                 <p className='py-2 text-xl text-gray-500'>Pick one technology per category to build your ideal stack.</p>

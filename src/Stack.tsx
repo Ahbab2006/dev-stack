@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import type { ITechonologi } from './type/techonologiType';
 import TechnologyCard from './components/TechnologyCard';
 import YourStack from './components/YourStack';
+import { toast } from 'react-toastify'
+
 
 interface StackProps {
     techonologies: ITechonologi[]
@@ -10,6 +12,9 @@ interface StackProps {
 const Stack = ({ techonologies }: StackProps) => {
     const [myStack, setMyStack] = useState<ITechonologi[]>([])
 
+
+
+
     // Technology Add
     const handleAddToStack = (technology: ITechonologi) => {
         const alreadyAdded = myStack.some(
@@ -17,8 +22,12 @@ const Stack = ({ techonologies }: StackProps) => {
         );
         if (alreadyAdded) return;
 
-        setMyStack((previousStack) => [...previousStack, technology])
+        setMyStack((previousStack) => [...previousStack, technology]) 
+
+        toast.success(`${technology.name} add Successfuly`);
+
     };
+
     // One Item Delete 
     const handleRemoveFromStack = (id: string) => {
         setMyStack((previousStack) => previousStack.filter((techonology) => techonology.id !== id))
@@ -29,7 +38,6 @@ const Stack = ({ techonologies }: StackProps) => {
     }
     return (
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-
             <div className="lg:col-span-3">
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     {techonologies.map((technology) => (

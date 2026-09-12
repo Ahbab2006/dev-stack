@@ -42,7 +42,7 @@ const YourStack = ({ myStack, onRemove, onRemoveAll }: YourStackProps) => {
 
                                 <div
                                     key={technology.id}
-className='flex items-center justify-between border border-gray-200 rounded-lg p-3'
+                                    className='flex items-center justify-between border border-gray-200 rounded-lg p-3'
                                 >
                                     <div className='flex items-center gap-3'>
                                         <img
@@ -66,7 +66,7 @@ className='flex items-center justify-between border border-gray-200 rounded-lg p
                                         }
                                         className="btn btn-xs btn-error btn-outline"
                                     >
-                                        Remove
+                                        X
                                     </button>
                                 </div>
                             ))}

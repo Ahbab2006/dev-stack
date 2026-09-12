@@ -3,15 +3,14 @@ import FuterLogo from '../assets/logo-text.png'
 
 const Footer = () => {
     return (
-        <div>
-            <div className="max-w-6xl mx-auto  justify-between items-center py-4 px-4  border-b-1 border-gray-200 border-t-2 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4
-">
+        <div className='max-w-full mx-auto border-gray-200 border-t-2 '>
+            <div className="max-w-6xl mx-auto justify-between items-center py-4 px-4    grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
                 <div className='p-4 space-y-2'>
                     <img src={FuterLogo} alt="" />
 
-                    <p>Curated tools, technologies, and resources for developers building
+                    <p className='text-1'>Curated tools, technologies, and resources for developers building
                         modern software.</p>
-                    <div className='flex gap-4 list-none cursor-pointer'>
+                    <div className='flex gap-4 list-none cursor-pointer py-4'>
                         <li className='text-[15px]  text-gray-700 font-bold'>GitHub</li>
                         <li className='text-[15px]  text-gray-700 font-bold'>Twitter</li>
                         <li className='text-[15px]  text-gray-700 font-bold'>Linkdin</li>
@@ -39,7 +38,7 @@ const Footer = () => {
 
 
             </div>
-            <div className='max-w-6xl mx-auto flex justify-between items-center py-4 px-4'>
+            <div className='max-w-6xl mx-auto flex justify-between items-center py-4 px-4  border-gray-200 border-t-2'>
                 <div >
                     <p className='text-[15px]'>© 2026 Dev Stack. All rights reserved.</p>
 
